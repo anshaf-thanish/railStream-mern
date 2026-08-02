@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import SearchResults from './pages/SearchResults';
 import SeatSelection from './pages/SeatSelection';
+import Footer from './components/Footer';
 // import Checkout from './pages/Checkout';
 // import Profile from './pages/Profile';
 // import Login from './pages/Login';
@@ -25,6 +26,7 @@ const App = () => {
             {/* <Route path="/admin/*" element={<AdminDashboard />} /> */}
         </Routes>
       </main>
+      <Footer/>
     </div>
   );
 };
