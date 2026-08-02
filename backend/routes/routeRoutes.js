@@ -1,11 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const { getTrains, createTrain } = require('../controllers/trainController');
+const { getRoutes, createRoute } = require('../controllers/routeController');
 const { protect, admin } = require('../middleware/authMiddleware');
 
 router.route('/')
-  .get(getTrains)
-  .post(protect, admin, createTrain);
-
+  .get(getRoutes)
+  .post(protect, admin, createRoute);
   
 module.exports = router;
