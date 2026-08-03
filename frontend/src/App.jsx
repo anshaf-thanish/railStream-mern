@@ -6,8 +6,8 @@ import SearchResults from './pages/SearchResults';
 import SeatSelection from './pages/SeatSelection';
 import Footer from './components/Footer';
 // import Checkout from './pages/Checkout';
-// import Profile from './pages/Profile';
-// import Login from './pages/Login';
+import Profile from './pages/Profile';
+import Login from './pages/Login';
 // import AdminDashboard from './pages/AdminDashboard';
 
 
@@ -21,8 +21,8 @@ const App = () => {
             <Route path="/search" element={<SearchResults />} />
             <Route path="/book/:journeyId" element={<SeatSelection />} />
             {/* <Route path="/checkout" element={<Checkout />} /> */}
-            {/* <Route path="/profile" element={<Profile />} /> */}
-            {/* <Route path="/login" element={<Login />} /> */}
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/login" element={<Login />} />
             {/* <Route path="/admin/*" element={<AdminDashboard />} /> */}
         </Routes>
       </main>

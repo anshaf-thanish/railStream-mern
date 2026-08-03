@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { logout } from '../store/authSlice';
 import api from '../api/axios';
+import { UserRound } from 'lucide-react';
 const Navbar = () => {
   const { userInfo } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
@@ -39,8 +40,8 @@ const Navbar = () => {
               </div>
             ) : (
               <div className="flex items-center gap-4">
-                <Link to="/login" className="text-sm font-medium text-slate-600 hover:text-primary transition">Log In</Link>
-                <Link to="/register" className="px-4 py-2 bg-primary text-white text-sm font-medium rounded-md hover:bg-blue-800 transition">Sign Up</Link>
+                <Link to="/login" className="px-4 py-2 bg-primary text-white text-sm font-medium rounded-md bg-blue-700 hover:bg-blue-900 transition"><UserRound /></Link>
+                
               </div>
             )}
           </div>
